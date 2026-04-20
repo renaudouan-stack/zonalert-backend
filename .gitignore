@@ -1,0 +1,45 @@
+# ═══════════════════════════════════════════════════════
+# RÈGLES DE SÉCURITÉ — NE JAMAIS COMMITER CES FICHIERS
+# ═══════════════════════════════════════════════════════
+
+# Variables d'environnement
+.env
+.env.*
+!.env.example
+
+# Clés Firebase / Google (CRITIQUE)
+google-services.json
+GoogleService-Info.plist
+*firebase-adminsdk*.json
+*service-account*.json
+*serviceAccount*.json
+src/config/*.json
+firebase-adminsdk*.json
+
+# Keystore Android (CRITIQUE — clé de signature de l'APK)
+*.keystore
+*.jks
+keystore.properties
+android/keystore.properties
+
+# ═══════════════════════════════════════════════════════
+# BUILD / CAPACITOR
+# ═══════════════════════════════════════════════════════
+node_modules/
+dist/
+www/
+android/
+ios/
+.angular/
+.capacitor/
+
+# ═══════════════════════════════════════════════════════
+# LOGS / OS / IDE
+# ═══════════════════════════════════════════════════════
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+coverage/
